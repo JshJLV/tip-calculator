@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+$primary-color: hsl(183, 100%, 15%);
+$secondary-color: hsl(172, 67%, 45%);
+$color-text: hsl(186, 14%, 43%);
+$color-secondary-text: hsl(184, 14%, 56%);
+$main-background: hsl(185, 41%, 84%);
+$input-background: hsl(189, 41%, 97%);
+$hover-input: hsl(172, 67%, 70%);;
+$error-message: rgb(216, 33, 33);
+$font: 'Space Mono', monospace;
+$font-small: 12px;
+$font-numbers: 24px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-background;
+    font-family: $font;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+.rating-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.label-rating input[type="radio"] {
+    display: none;
+}
+
+.label-rating span{
+    display: block;
+    font-size: 16px;
+    background-color: var(--little-dark-blue);
+    color: var(--medium-grey);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.label-rating span:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.label-rating input[type="radio"]:checked ~ span {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+*/

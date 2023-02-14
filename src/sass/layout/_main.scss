@@ -1,0 +1,124 @@
+.main {
+    background-color: white;
+    border-radius: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.calculator__texts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.calculator {
+    width: 100%;
+    height: auto;
+}
+
+.calculator__wrapper {
+    padding: 26px;
+}
+
+.calculator__sections {
+    padding: 14px;
+    
+    .calculator__p {
+        color: $color-text;
+    }
+
+    .calculator__error-message {
+        color: $error-message;
+    }
+
+    .calculator__input {
+        @extend %input-number;
+    }
+    
+    .calculator__input-img {
+        position: absolute;
+        z-index: 1;
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+
+    .tip-percentages-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 12px;
+    }
+
+    .tip-percentages-list__span {
+        @extend %span;
+        &--custom {
+            @extend %input-number;
+            max-width: 150px;
+            max-height: 48px;
+        }
+    }
+}
+
+// view of the results
+.result {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    padding-top: 0;
+}
+
+.result__wrapper {
+    padding: 8px;
+    background-color: $primary-color;
+    border-radius: 2em;
+}
+
+.overview {
+    border-radius: 2em;
+    display: flex;
+    
+    .details-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .details__texts {
+        flex: 1;
+        padding: 8px 16px;
+    }
+
+    .details__p {
+        color: white;
+    }
+
+    .details__p--secondary {
+        color: $color-secondary-text;
+        font-size: $font-small;
+    }
+
+    .output-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .output-view {
+        flex: 1;
+        padding: 16px;
+        text-align: right;
+        font-size: 30px;
+        color: $secondary-color;
+    }
+}
+
+.results__button-reset {
+    padding: 16px;
+
+    .btn-reset {
+        @extend %button-reset;
+    }
+}

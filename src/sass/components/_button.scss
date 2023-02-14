@@ -1,0 +1,16 @@
+%button-reset {
+    padding: 8px;
+    width: 100%;
+    font-size: $font-numbers;
+    font-family: $font;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: none;
+    border-radius: 0.2em;
+    transition: all 300ms;
+}
+
+%button-reset:hover { 
+    cursor: pointer; 
+    background-color: $hover-input;
+}
